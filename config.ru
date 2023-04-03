@@ -19,6 +19,12 @@ class App < Sinatra::Base
     sum = num1 + num2
     { result: sum }.to_json
   end
+
+  # Case example
+  # get '/games/:id' do
+  #   game = Game.find(params[:id])
+  #   game.to_json
+  # end
 end
 
 run App
